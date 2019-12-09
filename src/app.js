@@ -9,7 +9,7 @@ import { forecast } from './utils/forecast.js';
 //
 const appName = 'Weather App';
 const appDescription = 'Weather App description';
-const appVersion = '1.0git add src/.0';
+const appVersion = '1.0.0';
 const appAuthor = 'jorge@torres-lozano.com';
 
 
