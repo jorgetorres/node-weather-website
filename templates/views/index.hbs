@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{appDescription}}">
+  <meta name="author" content="{{appAuthor}}">
+  <link rel="icon" href="/img/weather.png">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <title>{{appName}}</title>
+</head>
+<body class="d-flex flex-column h-100">
+  {{>header}}
+
+  <main role="main" class="flex-shrink-0">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>/</h1>
+          <p><script>document.write({{aleatorio}})</script></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <input type="text" class="form-control-lg" id="forecastAddress" placeholder="Address" value="Monterrey, Nuevo León, México">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2" id="forecastAction">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p id="address"></p>
+          <p id="latitude"></p>
+          <p id="longitude"></p>
+          <p id="summary"></p>
+          <p id="temperature"></p>
+          <p id="precipProbability"></p>
+          <p id="error"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  {{>footer}}
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.bundle.js"></script>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
