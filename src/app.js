@@ -12,6 +12,7 @@ const appDescription = 'Weather App description';
 const appVersion = '1.0.0';
 const appAuthor = 'jorge@torres-lozano.com';
 
+const port = process.env.PORT || 3000;
 
 // Rutas para configuracion de Express
 //
@@ -116,7 +117,7 @@ app.get('*', (req, res) => {
 
 // Iniciar aplicacion
 //
-app.listen(3000, () => {
-  console.log('Up & Running on port 3000');
+app.listen(port, () => {
+  console.log(`Web server Up & Running on port ${port}`);
 });
 

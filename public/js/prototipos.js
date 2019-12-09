@@ -36,7 +36,8 @@ PrototipoHerencia.prototype.getPropiedadesHerencia = function() {
 
 
 PrototipoHerencia.prototype.requestURL = (address) => {
-  const url  = `http://localhost:3000/weather?address=${address}`;
+  // const url  = `http://localhost:3000/weather?address=${address}`;
+  const url  = `/weather?address=${address}`;
 
   return url;
 };
